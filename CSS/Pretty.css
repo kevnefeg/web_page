@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body
+{
+    height: 100vh;
+    width: 100%;
+    background: mintcream;
+}
+.headerx{
+    width: 350px;
+    height:200px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 5%;
+    position: relative;
+}
+
+/* SUN IMG */
+.headerx img{
+    width: 50%;
+    height: auto;
+}
+
+.headerx .solesito{
+  float: right;
+}
+
+ /* DISPLAYING ACTUAL DATE */
+#date{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: black;
+    text-align: center;
+    font-weight: 400px;
+    font-size: 25px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* AESTHETIC WALLPAPER */
+.wrapper{
+    margin: 120px auto;
+    max-width:450px;
+    width: 100%;
+    margin: 120px auto;
+    background-image: url(../IMG/fondo1.jpg);
+    background-size: auto;
+    border-radius: 5px;
+    padding: 25px;
+    box-shadow: 150px 30px 30px rgba(0,0,0,0.1);
+}
+
+.wrapper header{
+    font-size: 30px;
+    font-weight: 600;
+   text-align: left;
+  }
+
+  .wrapper .Inputfield{
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    height: 45px;
+  }
+  .Inputfield input{
+    width: 85%;
+    height: 100%;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid rgb(8, 3, 3);
+    font-size: 17px;
+    padding-left: 15px;
+    transition: all 0.3s ease;
+  }
+  .Inputfield input:focus{
+    border-color: #080808;
+  }
+
+  /* BUTTON */
+  .Inputfield button{
+    width: 50px;
+    height: 100%;
+    border: none;
+    color: #fff;
+    margin-left: 5px;
+    font-size: 21px;
+    outline: none;
+    background: #080808;
+    cursor: pointer;
+    border-radius: 3px;
+    opacity: 0.6;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  .Inputfield button:hover,
+  .footer button:hover{
+    background: #c8d0cc;
+  }
+  .Inputfield button.active{
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .wrapper .todolist{
+    max-height: 250px;
+    overflow-y: auto;
+  }
+  .todolist li{
+    position: relative;
+    list-style: none;
+    margin-bottom: 8px;
+    background: #f2f2f2;
+    border-radius: 3px;
+    padding: 10px 15px;
+   cursor: default;
+    overflow: hidden;
+    word-wrap: break-word; 
+  }
+
+  .lineThrough{
+    text-decoration: line-through;
+    color : #ccc;
+}
+
+ /* erase button */
+  .todolist li span{
+    position: absolute;
+    right: -45px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #e74c3c;
+    width: 45px;
+    text-align: center;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .todolist li:hover span{
+    right: 85px;
+  } 
+
+
+/* done button  */
+  .todolist li span1{
+    position: absolute;
+    right: -45px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: lightgreen;
+    width: 45px;
+    text-align: center;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .todolist li:hover span1{
+    right: 0px;
+  }
+
+  /* edit button*/
+  .todolist li span2{
+    position: absolute;
+    right: -45px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: lightskyblue;
+    width: 45px;
+    text-align: center;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .todolist li:hover span2{
+    right: 40px;
+  }
+
+  /* footer */
+  .wrapper .footer{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer button{
+    padding: 6px 10px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 5px;
+    background: #080808;
+    cursor: pointer;
+    user-select: none;
+    opacity: 0.6;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  .footer button.active{
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+ 
